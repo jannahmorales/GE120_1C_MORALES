@@ -23,7 +23,7 @@ print() #Separator for Part 1 and Part 2
 
 #PART2
 
-# Input DD
+# Input DMS
 dms = "120-54-12.49"
 values = dms.split("-")
 print("Input (In Degrees-Minutes-Seconds):", dms)
