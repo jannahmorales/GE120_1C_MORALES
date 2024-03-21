@@ -10,7 +10,6 @@ you begin to write your code is discussed. From writing an algorithm, creating a
 It helps visualize the sequence of actions that your code is supposed to perform, the use of loops, such as for and while loops,
 are introduced in procedural programming as well.
 
-repeating your code through the use of functions.Procedural programming loops 
 
 2. How does Git help in the Collaborative Development and Version Control environment of programming?
 Git helps with collaborative development as users are able to work on a program separately through different branches,
@@ -29,8 +28,6 @@ where a task is repeated for existing objects within a range of values. An examp
 of different turning points in a vertical control survey. The program has to repeat the task of computing for the elevation
 'for' every turning point.
 
-- while loop: necessary to repeat a task with a fixed condition
-- for loop: repetition but for existing objects within a range of values 
 
 4. Discuss the Divide and COnquer paradigm in programming
 The Divide and Conquer paradigm in programming intends to break down a primary or bigger task into sub-problems. Upon
@@ -40,7 +37,7 @@ main task or problem to be solved, mas lilitaw yung mga cases where an error occ
 solve the task with one big code. The divide and conquer paradigm will help ensure the functionality as well as thoroughness
 of a code, we can work on a sub-problem and create solutions for different test cases and thus, avoid minor errors in coming 
 up as the different solutions for each sub-task are put together.
-- break down a bigger problem into subproblems, create a program that solves individual problems and minimize length of code by creating functions throughout the process
+
 
 5. Give an example of a task related to geomatics that is done manually and can be optimized using programming? WHat would be your plan of attack for this solution?
 An example of a task related to geomatics that is usually done manually is the computation of the Northings and Eastings
