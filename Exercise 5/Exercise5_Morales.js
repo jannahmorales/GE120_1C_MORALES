@@ -114,7 +114,7 @@ console.log("LINE NO.".padEnd(10), 'DISTANCE'.padEnd(14), 'BEARING'.padEnd(15), 
 console.log("________________________________________________________________________")
 for (var line of lines){  // for loop repeats for each line in 'lines' array
      console.log("\n",
-        line[0].toString().padEnd(11),
+        line[0].toString().padStart(3).padEnd(11),
         line[1].toString().padEnd(12),
         line[2].toString().padEnd(17),
         line[3].toPrecision(5).toString().padEnd(14),
@@ -126,7 +126,7 @@ console.log("___________________________________________________________________
 
 // Print small table with LEC and REC
 console.log("_____________________________________________________", "\n")
-console.log("LEC and REC ".padStart(25))
+console.log("LEC and REC ".padStart(30))
 console.log("_____________________________________________________","\n")
 console.log("Summation of Latitude:", sumLat,"\n")
 console.log("Summation of Departure:", sumDep,"\n")
@@ -134,7 +134,7 @@ console.log("Summation of Distance:", sumDist,"\n")
 var lec = Math.sqrt(sumLat**2 + sumDep**2)
 console.log("LEC:", lec,"\n")
 var rec = sumDist/lec
-console.log("REC: 1:"+(Math.round(rec/1000)*1000).toPrecision(5)) //rounding the REC to the nearest thousands
+console.log("REC: 1:"+(Math.floor(rec/1000)*1000).toPrecision(5)) //rounding the REC down to the nearest thousands
 
 console.log("_____________________________________________________")
 
@@ -158,7 +158,7 @@ console.log("LINE NO.".padEnd(14), 'C LAT'.padEnd(15), 'C DEP'.padEnd(13), 'ADJ 
 console.log("________________________________________________________________________")
 for (var adj of adjusted){  // for loop repeats for each line in 'lines' array
      console.log("\n",
-        adj[0].toString().padEnd(11),
+        adj[0].toString().padStart(3).padEnd(11),
         adj[1].toPrecision(5).toString().padEnd(15),
         adj[2].toPrecision(5).toString().padEnd(15),
         adj[3].toPrecision(5).toString().padEnd(15),
