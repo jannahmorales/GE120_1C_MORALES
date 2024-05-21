@@ -13,6 +13,7 @@ import {Picker} from '@react-native-picker/picker';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 import cute_dog_pic from './picture/cute_dog_pic.jpg'
+import dms_dd from './picture/dms_dd.jpg'
 
 export default function App() {
   
@@ -86,10 +87,11 @@ export default function App() {
         <Text style={styles.titleText}> Output: </Text>
         <Text style={styles.titleText}> {outputValue} </Text>
       </View>
+
       <View style={styles.box4}>
         <Image
           style={styles.image}
-          source={cute_dog_pic}
+          source={dms_dd}
           placeholder={blurhash}
           contentFit="cover"
           transition={1000}
