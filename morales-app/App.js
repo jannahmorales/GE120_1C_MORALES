@@ -49,7 +49,7 @@ export default function App() {
     else { //else statement, converts DMS to DD
       var elements = value.split("-")
       var output = parseFloat(elements[0]) + parseFloat(elements[1])/60 + parseFloat(elements[2])/3600
-      setOutputValue(output)
+      setOutputValue(output.toPrecision(5)) //round of DD to 2 decimal places
     }
 }
 
